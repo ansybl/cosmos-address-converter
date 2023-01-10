@@ -1,5 +1,6 @@
 {
   "name": "cosmos-address-converter",
+  "homepage": "https://ansybl.github.io/cosmos-address-converter/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,12 +24,14 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
-    "lint:prettier": "prettier --check src *.md",
-    "format:prettier": "prettier --write src *.md",
+    "lint:prettier": "prettier --check src .github *.md",
+    "format:prettier": "prettier --write src .github *.md",
     "lint:eslint": "eslint src",
     "format:eslint": "eslint --fix src",
     "lint": "npm run lint:prettier && npm run lint:eslint",
-    "format": "npm run format:prettier && npm run format:eslint"
+    "format": "npm run format:prettier && npm run format:eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "license": "MIT",
   "eslintConfig": {
@@ -56,6 +59,7 @@
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
     "eslint-config-prettier": "^8.6.0",
+    "gh-pages": "^4.0.0",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
     "prettier": "2.8.2",
