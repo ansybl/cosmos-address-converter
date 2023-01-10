@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.c3ecbc8c.js",
-    "static/js/787.3ecebb56.chunk.js": "/static/js/787.3ecebb56.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.c3ecbc8c.js.map": "/static/js/main.c3ecbc8c.js.map",
-    "787.3ecebb56.chunk.js.map": "/static/js/787.3ecebb56.chunk.js.map"
+    "main.css": "/cosmos-address-converter/static/css/main.073c9b0a.css",
+    "main.js": "/cosmos-address-converter/static/js/main.77e68870.js",
+    "static/js/787.3ecebb56.chunk.js": "/cosmos-address-converter/static/js/787.3ecebb56.chunk.js",
+    "index.html": "/cosmos-address-converter/index.html",
+    "main.073c9b0a.css.map": "/cosmos-address-converter/static/css/main.073c9b0a.css.map",
+    "main.77e68870.js.map": "/cosmos-address-converter/static/js/main.77e68870.js.map",
+    "787.3ecebb56.chunk.js.map": "/cosmos-address-converter/static/js/787.3ecebb56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.c3ecbc8c.js"
+    "static/js/main.77e68870.js"
   ]
 }
