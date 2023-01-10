@@ -23,8 +23,10 @@
     "eject": "react-scripts eject",
     "lint:prettier": "prettier --check src *.md",
     "format:prettier": "prettier --write src *.md",
-    "lint": "npm run lint:prettier",
-    "format": "npm run format:prettier"
+    "lint:eslint": "eslint src",
+    "format:eslint": "eslint --fix src",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "format": "npm run format:prettier && npm run format:eslint"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +47,9 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint-config-prettier": "^8.6.0",
     "prettier": "2.8.2"
   }
 }
