@@ -30,6 +30,7 @@
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "format": "npm run format:prettier && npm run format:eslint"
   },
+  "license": "MIT",
   "eslintConfig": {
     "extends": [
       "react-app",
