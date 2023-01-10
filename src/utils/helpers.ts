@@ -1,15 +1,15 @@
-import { sha256 } from "@cosmjs/crypto";
-import { fromBase64, toBech32 } from "@cosmjs/encoding";
-
-const pubKeyToBench32 = (pubKey: string, prefix: string) => {
-  const pubkey = {
-    type: "tendermint/PubKeyEd25519",
-    value: pubKey,
-  };
-  const ed25519PubkeyRaw = fromBase64(pubkey.value);
-  const addressData = sha256(ed25519PubkeyRaw).slice(0, 20);
-  const bech32Address = toBech32(prefix, addressData);
-  return bech32Address;
+const handleFetchError = (response: Response) => {
+  if (!response.ok)
+    throw Error(`Error (status ${response.status}) fetching ${response.url}`);
 };
 
-export { pubKeyToBench32 };
+const valoperToPrefix = (valoper: string): string | null => {
+  const prefixIndex = valoper.indexOf("valoper");
+  if (prefixIndex === -1) return null;
+  return valoper.slice(0, prefixIndex);
+};
+
+const randomChoice = <T>(choices: T[]): T =>
+  choices[Math.floor(Math.random() * choices.length)];
+
+export { randomChoice, handleFetchError, valoperToPrefix };
