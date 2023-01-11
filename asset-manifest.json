@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cosmos-address-converter/static/css/main.073c9b0a.css",
-    "main.js": "/cosmos-address-converter/static/js/main.855a916c.js",
+    "main.js": "/cosmos-address-converter/static/js/main.dc381133.js",
     "static/js/787.3ecebb56.chunk.js": "/cosmos-address-converter/static/js/787.3ecebb56.chunk.js",
     "index.html": "/cosmos-address-converter/index.html",
     "main.073c9b0a.css.map": "/cosmos-address-converter/static/css/main.073c9b0a.css.map",
-    "main.855a916c.js.map": "/cosmos-address-converter/static/js/main.855a916c.js.map",
+    "main.dc381133.js.map": "/cosmos-address-converter/static/js/main.dc381133.js.map",
     "787.3ecebb56.chunk.js.map": "/cosmos-address-converter/static/js/787.3ecebb56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.855a916c.js"
+    "static/js/main.dc381133.js"
   ]
 }
