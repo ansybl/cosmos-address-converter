@@ -1,5 +1,6 @@
 # Cosmos Address Converter
 
+[![Tests](https://github.com/ansybl/cosmos-address-converter/actions/workflows/tests.yml/badge.svg)](https://github.com/ansybl/cosmos-address-converter/actions/workflows/tests.yml)
 [![Deploy](https://github.com/ansybl/cosmos-address-converter/actions/workflows/deploy.yml/badge.svg)](https://github.com/ansybl/cosmos-address-converter/actions/workflows/deploy.yml)
 
 Converts all kind of Cosmos addresses to the different types.
