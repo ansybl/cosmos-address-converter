@@ -2,11 +2,7 @@ import { sha256 } from "@cosmjs/crypto";
 import { fromBase64, fromBech32, toBech32, toHex } from "@cosmjs/encoding";
 
 const pubKeyToSha256 = (pubKey: string): Uint8Array => {
-  const pubkey = {
-    type: "tendermint/PubKeyEd25519",
-    value: pubKey,
-  };
-  const ed25519PubkeyRaw = fromBase64(pubkey.value);
+  const ed25519PubkeyRaw = fromBase64(pubKey);
   return sha256(ed25519PubkeyRaw).slice(0, 20);
 };
 
