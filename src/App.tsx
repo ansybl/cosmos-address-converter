@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
 import {
@@ -29,9 +28,9 @@ interface InputSelectProps {
 }
 const InputSelect = (props: InputSelectProps) => (
   <>
-    <label>Chain: </label>
+    <label>{props.labelText}: </label>
     <select onChange={props.onChange} value={props.value}>
-      {props.options?.length &&
+      {props.options?.length > 0 &&
         props.options.map((option) => (
           <option key={option} value={option}>
             {option}
